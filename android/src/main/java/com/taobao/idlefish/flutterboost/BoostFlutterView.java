@@ -70,11 +70,13 @@ public class BoostFlutterView extends FlutterView {
         }
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void onStart() {
         //do nothing...
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void onPostResume() {
         //do nothing...
@@ -86,17 +88,20 @@ public class BoostFlutterView extends FlutterView {
         //do nothing...
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void onStop() {
         //do nothing...
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public FlutterNativeView detach() {
         //do nothing...
         return getFlutterNativeView();
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void destroy() {
         //do nothing...

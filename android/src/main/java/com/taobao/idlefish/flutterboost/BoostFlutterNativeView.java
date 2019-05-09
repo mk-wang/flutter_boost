@@ -33,11 +33,13 @@ public class BoostFlutterNativeView extends FlutterNativeView {
         super(context);
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void detach() {
         //do nothing...
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void destroy() {
         //do nothing...
