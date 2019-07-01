@@ -141,16 +141,14 @@ class FlutterBoost {
     }
   }
 
-
   bool onPageResult(String key, Map resultData, Map params) {
-
-    if(_resultMediator.isResultId(key)){
-      _resultMediator.onPageResult(key, resultData,params);
-    }else{
+    if (_resultMediator.isResultId(key)) {
+      _resultMediator.onPageResult(
+          key, resultData.cast<String, dynamic>(), params);
+    } else {
       containerManager?.containerStateOf(key)?.performOnResult(resultData);
     }
     return true;
-
   }
 
   VoidCallback setPageResultHandler(String key, PageResultHandler handler) {
